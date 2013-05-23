@@ -1,0 +1,429 @@
+doctype html
+html lang="fr"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+    meta content="text/html; charset=utf-8" http-equiv="content-type"
+    meta content="fr" http-equiv="content-language"
+    meta name="author" lang="fr" content="Nicolas Blanco"
+    meta name="copyright" lang="fr" content="Nicolas Blanco"
+    meta name="description" content="Un développeur Ruby on Rails freelance sur Paris passionné et pratiquant les méthodologies agiles !"
+    meta name="keywords" content="web,ruby,rails,paris"
+    meta name="robots" content="all,follow"
+    meta name="google-site-verification" content="-UUDHllSyVaPrBRanqNYib657V7ziQtQlFyALrnLXXg"
+
+    /! Le styles
+    link href="/css/bootstrap.min.css" rel="stylesheet"
+    link href="/css/main.css" rel="stylesheet"
+
+    title {{ page.title }}
+
+    /! Le HTML5 shim, for IE6-8 support of HTML elements
+    /[ if lt IE 9 ]
+      script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"
+
+    javascript:
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-15322489-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+  body
+
+    div class="navbar navbar-fixed-top"
+      div class="navbar-inner"
+        div class="container"
+          a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse"
+            span class="icon-bar"
+            span class="icon-bar"
+            span class="icon-bar"
+          a class="brand" href="#"
+            | Nicolas Blanco
+          div class="container nav-collapse"
+            ul class="nav"
+              li
+                a href="#open-source" Open source
+              li
+                a href="#talks" Conférences
+              li
+                a href="#projects" Projets
+              li
+                a href="#certifications" Certifications
+              li
+                a href="#contact" Contact
+
+    div class="container"
+      div class="content"
+        div class="row"
+          div class="span12"
+
+
+            .row
+              .span10.offset1 style="background-color: #EEE; border-radius: 7px; padding: 1.5em;"
+                h1
+                  img src="/img/portrait_image.jpg" width="70" height="70" style="padding: 0.4em;"
+                  | &nbsp;Bonjour,
+                p style="font-size: 16px;"
+                  | vous êtes ici chez un
+                  strong &nbsp;consultant et développeur Web&nbsp;
+                  | freelance passionné sur Paris ! J'adore travailler sur des projets Web <strong>excitants</strong>.
+                  br
+                  | Vous aussi ? Prenons un café ensemble !
+                p
+                  | Ce que j'adore :
+                  ul
+                    li prototyper rapidement avec des technos sympas (Ruby on Rails, cloud computing, etc...),
+                    li mettre en place des outils et méthodologies agiles,
+                    li communiquer efficacement,
+                    li itérer très régulièrement,
+                    li obtenir <strong>rapidement</strong> une application de qualité qui corresponde vraiment aux besoins de mes clients ! Vous n'y croyez pas ? C'est possible !
+
+                .row
+                  .span4
+                    a href="mailto:nicolas@leelia.fr" class="btn btn-warning btn-large"
+                      i class='icon-envelope icon-white'
+                      | &nbsp; nicolas@leelia.fr
+                  .span4.offset2
+                    a href="http://twitter.com/slainer68" class="btn btn-primary btn-large"
+                      i class='icon-star icon-white'
+                      | &nbsp;
+                      strong twitter
+                      | .com/slainer68
+
+            div class="page-header" id="open-source" style="margin-top: 3em;"
+              h2 Projets Open Source
+
+            | Les outils et logiciels libres nous permettent de gagner du temps et d'éviter de réinventer la roue.
+            br
+            | Pour les développeurs c'est aussi une grande source de savoir et de partage.
+
+            br
+            br
+            | Vous trouverez sur mon compte&nbsp;
+            a href="http://github.com/slainer68" Github
+            | &nbsp;mes principales contributions au monde de l'open source...
+
+
+            div class="page-header" id="talks"
+              h2 Dernières conférences publiques
+
+            ul class="thumbnails"
+
+              li class="span4"
+                div class="thumbnail"
+                  erb:
+                    <div style="margin: 12px 0 4px;"> <strong> <a href="http://www.slideshare.net/nicolasblanco1/dcouplez-votre-appli-en-microapis" title="Découplez votre appli en micro-APIs" target="_blank">Découplez votre appli en micro-APIs</a> </strong> </div> <iframe src="http://www.slideshare.net/slideshow/embed_code/15585856" width="325" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
+                  div class="caption"
+                    p
+                      em Décembre 2012
+
+              li class="span4"
+                div class="thumbnail"
+                  erb:
+                    <div style="width:325px" id="__ss_11452252"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/nicolasblanco1/some-oauth-love" title="Some OAuth love" target="_blank">Some OAuth love</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/11452252" width="325" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> </div>
+                  div class="caption"
+                    p
+                      em Février 2012
+
+              li class="span4"
+                div class="thumbnail"
+                  erb:
+                    <div style="width:325px" id="__ss_7484882"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/nicolasblanco1/a-piece-of-sugar-in-your-clientside-development" title="A piece of sugar in your client-side development">Sugar in your client-side development</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/7484882" width="325" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> </div>
+                  div class="caption"
+                    p
+                      em Avril 2011
+
+              li class="span4"
+                div class="thumbnail"
+                  erb:
+                    <div style="width:325px" id="__ss_7572714"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/nicolasblanco1/background-processing-with-resque" title="Background processing with Resque">Background processing with Resque</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/7572714" width="325" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> </div>
+                  div class="caption"
+                    p
+                      em Avril 2011
+
+            div class="page-header" id="projects"
+              h2 Projets
+
+            table class="table table-bordered table-striped"
+              thead
+                tr
+                  th
+                    | Nom
+                  th
+                    | Date
+                  th
+                    | Description
+                  th
+                    | Site
+                  th
+                    | Technologies
+              tbody
+
+                tr
+                  td
+                    | France Télévisions
+                  td
+                    | 2012
+                  td
+                    | Mission chez France Télévisions Éditions Numériques.
+                    br
+                    em Lead Developer
+                  td
+                    a href="http://www.francetelevisions.fr" francetelevisions.fr
+                  td
+                    span class="label"
+                      | Ruby on Rails 3
+                    br
+                    span class="label"
+                      | MongoDB
+                    br
+                    span class="label"
+                      | ElasticSearch
+                    br
+                    span class="label"
+                      | Redis
+
+                tr
+                  td
+                    | Simplib
+                  td
+                    | 2012
+                  td
+                    | Application de partage et de communauté autour de sites Web.
+                    br
+                    em Lead Developer
+                  td
+                    a href="http://www.simplib.com" simplib.com
+                  td
+                    span class="label"
+                      | Ruby on Rails 3
+                    br
+                    span class="label"
+                      | MongoDB
+                    br
+                    span class="label"
+                      | Twitter bootstrap
+
+                tr
+                  td
+                    | Reewardio
+                  td
+                    | 2012
+                  td
+                    | Application mobile de fidélité nouvelle génération.
+                    br
+                    em Lead Developer
+                  td
+                    a href="http://reewardio.com" reewardio.com
+                  td
+                    span class="label"
+                      | Ruby on Rails 3
+                    br
+                    span class="label"
+                      | MongoDB
+
+                tr
+                  td
+                    | Consulting Café
+                  td
+                    | 2012
+                  td
+                    | Site de partage et d'informations destiné aux consultants.
+                    br
+                    em Lead Developer
+                  td
+                    a href="http://www.consultingcafe.com" consultingcafe.com
+                  td
+                    span class="label"
+                      | Ruby on Rails 3
+                    br
+                    span class="label"
+                      | MongoDB
+
+                tr
+                  td
+                    | Skillstar
+                  td
+                    | 2011-2012
+                  td
+                    | Jeux vidéo en ligne d'adresse et de connaissance. Possibilité de parier de l'argent en affrontant les autres joueurs. Le jeu est télévisé certains matins sur la chaîne nationale française M6.
+                    br
+                    em Developer
+                  td
+                    a href="http://www.skillstar.com" skillstar.com
+                  td
+                    span class="label"
+                      | Ruby on Rails 2
+                    br
+                    span class="label"
+                      | jQuery
+                    br
+                    span class="label"
+                      | Redis
+                    br
+                    span class="label"
+                      | node.js
+
+                tr
+                  td
+                    | Campingavenue
+                  td
+                    | 2011
+                  td
+                    | Plateforme de réservation de campings, bungalows et chalets en Europe.
+                    br
+                    em Lead developer
+                  td
+                    a href="http://www.campingavenue.com" campingavenue.com
+                  td
+                    span class="label"
+                      | Ruby on Rails 3
+                    br
+
+                tr
+                  td
+                    | Bookandgolf
+                  td
+                    | 2010-2011
+                  td
+                    | Plateforme de gestion de planning et de vente à destination des clubs de golf.
+                    br
+                    em Lead developer
+                  td
+                    a href="http://www.bookandgolf.com" bookandgolf.com
+                  td
+                    span class="label"
+                      | Ruby on Rails 3
+                    br
+                    span class="label"
+                      | Redis & Resque
+                    br
+                    span class="label"
+                      | backbone.js
+                    br
+                    span class="label"
+                      | Sphinx
+
+                tr
+                  td
+                    | Lollidays
+                  td
+                    | 2010
+                  td
+                    | Réseau social dans le domaine des activités de loisirs et de divertissement.
+                    br
+                    em Developer
+                  td
+                    a href="http://www.lollidays.com" lollidays.com
+                  td
+                    span class="label"
+                      | Ruby on Rails 2
+                    br
+                    span class="label"
+                      | Event Machine
+                    br
+                    span class="label"
+                      | Sphinx
+
+                tr
+                  td
+                    | The Sphere
+                  td
+                    | 2009-2010
+                  td
+                    | Réseau social "d'extrême luxe".
+                    br
+                    em Developer
+                  td
+                    a href="http://www.the-sphere.com" the-sphere.com
+                  td
+                    span class="label"
+                      | Ruby on Rails 2
+                    br
+                    span class="label"
+                      | Sphinx
+
+                tr
+                  td
+                    | Keldelice
+                  td
+                    | 2008-2009
+                  td
+                    | Site internet sur la gastronomie française.
+                    br
+                    em Developer
+                  td
+                    a href="http://www.keldelice.com" keldelice.com
+                  td
+                    span class="label"
+                      | Ruby on Rails 2
+                    br
+                    span class="label"
+                      | Sphinx
+
+
+            div class="page-header" id="certifications"
+              h2 Formations et certifications
+
+            table class="table table-bordered table-striped"
+              thead
+                tr
+                  th
+                    | Nom
+                  th
+                    | Date
+                  th
+                    | Site
+              tbody
+                tr
+                  td
+                    | Certification "Ruby Association Certified Ruby Programmer Silver"
+                  td
+                    | 2010
+                  td
+                    a href="http://www.ruby-assn.org/certification/programmer" ruby-assn.org
+                tr
+                  td
+                    | Formation 'Formateurs : construire vos actions de formation' chez Latitude (conseil en communication et organisme de formation)
+                  td
+                    | 2009
+                  td
+                    a href="http://www.latitude.fr" latitude.fr
+
+
+            div class="page-header" id="contact"
+              h2 Contact
+
+            | Nicolas Blanco
+            br
+            | LEELIA
+            br
+            | 159 rue de Charonne
+            br
+            | 75011 PARIS
+            br
+            | e-mail :&nbsp;
+            a href="mailto:nicolas@leelia.fr" nicolas@leelia.fr
+            br
+            br
+            | Dirigeant de&nbsp;
+            a href="http://www.leelia.fr" LEELIA
+            |, une entreprise spécialisée dans le développement Web agile :).
+
+
+
+
+
+            /| {{ content }}
+
+            div class="page-header"
+
+      footer class="footer"
+        p style="float: right;"
+          em Site propulsé par Ruby on Rails, Twitter Bootstrap et Heroku :-)
