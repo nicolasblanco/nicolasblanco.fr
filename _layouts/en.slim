@@ -29,11 +29,7 @@ html lang="fr"
       _gaq.push(['_setAccount', 'UA-15322489-1']);
       _gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+      (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
 
   body
 
@@ -70,7 +66,7 @@ html lang="fr"
             header.row
               .span10.offset1 style="background-color: #EEE; border-radius: 7px; padding: 1.5em;"
                 h1
-                  img src="img/nicolas-blanco-freelance-rails.jpg" width="70" height="70" style="padding: 0.4em;"
+                  img src="img/nicolas-blanco-freelance-rails.jpg" width="170" height="170" style="padding: 0.4em;"
                   | &nbsp;Hi,
                 p style="font-size: 16px;"
                   | you're on the portfolio of a <strong>web architect</strong> and freelance <strong>developer</strong> in Paris.
@@ -169,6 +165,27 @@ html lang="fr"
                   th
                     | Technologies
               tbody
+
+                tr
+                  td
+                    | Reader by Slate
+                  td
+                    | 2014
+                  td
+                    | News Web Application
+                    br
+                    em Developer
+                  td
+                    a href="http://www.reader.fr" reader.fr
+                  td.tags
+                    span class="label"
+                      | Ruby on Rails 4
+                    br
+                    span class="label"
+                      | MongoDB
+                    br
+                    span class="label"
+                      | AngularJS
 
                 tr
                   td
